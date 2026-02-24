@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 5 - CSS Positioning</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+height: 100vh;
+}
+
+.container {
+position: relative;
+height: 400px;
+border: 2px solid black;
+margin: 20px;
+}
+
+.box {
+width: 150px;
+height: 150px;
+color: white;
+text-align: center;
+line-height: 150px;
+font-weight: bold;
+}
+
+
+.static-box {
+background-color: red;
+position: static;
+}
+
+
+.relative-box {
+background-color: blue;
+position: relative;
+top: 20px;
+left: 30px;
+}
+
+
+.absolute-box {
+background-color: green;
+position: absolute;
+top: 50px;
+right: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>CSS Positioning Example</h2>
+
+<div class="container">
+<div class="box static-box">Static</div>
+<div class="box relative-box">Relative</div>
+<div class="box absolute-box">Absolute</div>
+</div>
+
+</body>
+</html>
